@@ -1,0 +1,84 @@
+  body{
+    margin:0;
+    background-color: #000;
+    color: #fff;
+  }
+div.infoContainer{
+  width:200px;
+  height:200px;
+  border:1px solid red;
+}
+
+div.infoContent{
+  width:160px;
+  height:160px;
+  border:1px solid blue;
+  padding:30px;
+}
+
+
+div.infoContent2{
+  width:160px;
+  height:160px;
+  border:1px solid blue;
+  padding:30px;
+  box-sizing: border-box;
+}
+
+div.innerContent{
+  background:#00ff00;
+  width:100px;
+  height:100px;
+}
+
+a{
+  color: aqua;
+}
+
+/* mixin for multiline */
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  margin: 20px;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+.multiLineTruncate{
+  overflow: hidden;
+  position: relative;
+  max-height: 2.4em;
+  text-align: justify;
+  padding-right: 1em;
+  width: 150px;
+}
+.multiLineTruncate:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.multiline-ellipsis {
+    display: block;
+    display: -webkit-box;
+    max-width: 400px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
